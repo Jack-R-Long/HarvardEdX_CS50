@@ -1,0 +1,33 @@
+sort1 random1000
+    real    0m0.440s
+    user    0m0.221s
+    sys     0m0.020s
+sort2 random1000
+    real    0m0.099s
+    user    0m0.005s
+    sys     0m0.018s
+sort3 random1000
+    real    0m0.164s
+    user    0m0.096s
+    sys     0m0.016s
+    
+I think sort2 is merge
+
+sort1 reversed1000
+    real    0m0.373s
+    user    0m0.189s
+    sys     0m0.008s
+sort2 
+    real    0m0.320s
+    user    0m0.004s
+    sys     0m0.021s
+sort3
+    real    0m0.266s
+    user    0m0.098s
+    sys     0m0.020s
+    
+    
+sort3 sorted5000
+real    0m0.033s
+user    0m0.024s
+sys     0m0.008s

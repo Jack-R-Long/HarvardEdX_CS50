@@ -1,0 +1,11 @@
+sort1 uses: bubble
+
+How do you know?: Fastest to sort sorted list.  Bubble sort is the only algo that can recongize a sorted list and finish early
+
+sort2 uses: merge
+
+How do you know?: Fastest to sort random
+
+sort3 uses: selection
+
+How do you know?: Sorts random and sorted list with same time complexity

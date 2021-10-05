@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+
+            // Delay selectors until DOM is loaded
+            // function() is an anonymous function (think Lambda fun in Pytnon)
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Question 1
+                document.querySelector('#multiple-choice').addEventListener('click', function(e) {
+                        e.preventDefault()
+                        console.log(e.value)
+                        let buttons = document.querySelector('.btn');
+                        let feedback = document.getElementById('mc-feedback');
+                        feedback.innerHTML = 'Incorrect!'
+                        buttons.style.backgroundColor = 'red'
+                    }
+                )
+
+
+                document.querySelector('#free-response').addEventListener('submit', function() {
+                        alert('free')
+                    }
+                )
+
+            })
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <form id="multiple-choice">
+                    <h3>What is the best plane?</h3>
+                    <p id='mc-feedback'></p>
+                    <button class="btn" name="raptor">F22 Raptor</button>
+                    <button class="btn" name="lightning">F35 Lightning</button>
+                    <button class="btn" name="flanker">Su-27 Flanker</button>
+                    <button class="btn" name="felon">Su-57 Felon </button>
+                    <button class="btn" name="euro">Eurofighter Typhoon</button>
+                </form>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <form id="free-response">
+                    <h3>Who has the best Air Force?</h3>
+                    <input name="r" type="text">
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div>
+
+        </div>
+    </body>
+</html>
